@@ -1,0 +1,911 @@
+@font-face {
+font-family: 'ds_digital';
+src: url('fonts/DS-DIGI.TTF') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+.container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 77vw;
+    width: 97%;
+    background: #012B35;
+    padding: 1vw;
+    perspective: 41.5vw;
+    border-radius: 1.5vw;
+    border: 0.5vw solid #9EFCFF;
+    box-shadow: 0 0 1vw #9EFCFF,
+              0 0 2vw #9EFCFF,
+              0 0 3vw #9EFCFF,
+              0 0 4vw #9EFCFF,
+              0 0 5vw #9EFCFF,
+              0 0 0 0.1vw #9EFCFF;
+    overflow: hidden;
+}
+
+.vitesse{
+  position: absolute;
+  width: 31.2vw;
+  height: 31.2vw;
+  left: 33%;
+  top: 0.6%;
+  border-left: 0.4vw solid #70E5F9;
+  border-right: 0.4vw solid #70E5F9;
+  border-top: 0.4vw solid #70E5F9;
+  border-bottom: 0.4vw solid #70E5F9;
+  border-radius: 50%;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  will-change: transform;
+}
+
+@keyframes rotate {
+
+  0%   { transform: rotate(0);}
+  50%   { transform: rotate(180deg);}
+  100%   { transform: rotate(360deg);}
+
+}
+
+.smallfamily
+{
+    position: absolute;
+
+}
+
+.small{
+  position: absolute;
+  background-color: #70E5F9;
+
+}
+
+.small-1 { width: 0.75vw; height: 2.5vw; left: 4.6vw; top: 24.2vw; transform: rotate(45deg); animation-delay: 1s;}
+.small-2 { width: 0.75vw; height: 2.5vw; left: 2vw; top: 20vw; transform: rotate(65deg); animation-delay: 2s;}
+.small-3 { width: 0.75vw; height: 2.5vw; left: 0.75vw; top: 14.6vw; transform: rotate(90deg); animation-delay: 3s;}
+.small-4 { width: 0.75vw; height: 2.5vw; left: 1.75vw; top: 9.2vw; transform: rotate(-65deg); animation-delay: 4s;}
+.small-5 { width: 0.75vw; height: 2.5vw; left: 4vw; top: 4.7vw; transform: rotate(-45deg); animation-delay: 5s;}
+.small-6 { width: 0.75vw; height: 2.5vw; left: 8.3vw; top: 1.4vw; transform: rotate(-30deg); animation-delay: 6s;}
+.small-7 { width: 0.75vw; height: 2.5vw; left: 13vw; top: 0; transform: rotate(-5deg); animation-delay: 7s;}
+.small-8 { width: 0.75vw; height: 2.5vw; left: 18.4vw; top: 0.15vw; transform: rotate(10deg); animation-delay: 8s;}
+.small-9 { width: 0.75vw; height: 2.5vw; left: 22.9vw; top: 2vw; transform: rotate(30deg); animation-delay: 9s;}
+
+
+#counter{
+  position: absolute;
+  font-family: 'ds_digital';
+  font-size: 15.7vw;
+  color: #70E5F9;
+  left: 38%;
+  top: -1%;
+}
+
+.line1{
+  position: absolute;
+  height: 0.1vw;
+  width: 5.9vw;
+  background-color: white;
+  transform: rotate(35deg);
+  left: 29vw;
+  top: 6.5vw;
+}
+
+.line2{
+  position: absolute;
+  height: 0.1vw;
+  width: 23.22vw;
+  background-color: white;
+  left: 6.3vw;
+  top: 4.8vw;
+}
+.line3{
+  position: absolute;
+  height: 0.1vw;
+  width: 5.9vw;
+  background-color: white;
+  transform: rotate(-35deg);
+  left: 61.7vw;
+  top: 6.2vw;
+}
+
+.line4{
+  position: absolute;
+  height: 0.1vw;
+  width: 24vw;
+  background-color: white;
+  left: 67vw;
+  top: 4.5vw;
+}
+.line5{
+  position: absolute;
+  height: 0.1vw;
+  width: 5.8vw;
+  background-color: white;
+  transform: rotate(-35deg);
+  left: 29.1vw;
+  top: 26vw;
+}
+
+.line6{
+  position: absolute;
+  height: 0.1vw;
+  width: 23.22vw;
+  background-color: white;
+  left: 6.4vw;
+  top: 27.7vw;
+}
+.line7{
+  position: absolute;
+  height: 0.1vw;
+  width: 5.9vw;
+  background-color: white;
+  transform: rotate(35deg);
+  left: 61.7vw;
+  top: 26.3vw;
+}
+
+.line8{
+  position: absolute;
+  height: 0.1vw;
+  width: 24vw;
+  background-color: white;
+  left: 67vw;
+  top: 28vw;
+}
+
+.line9{
+  position: absolute;
+  height: 0.05vw;
+  width: 15vw;
+  background-color: #FFD728;
+  left: 9vw;
+  top: 8.5vw;
+  box-shadow: 0 0 0.5vw #FFD728,
+            0 0 1vw #FFD728,
+            0 0 1.5vw #FFD728,
+            0 0 2vw #FFD728,
+            0 0 2.5vw #FFD728,
+            0 0 0 0.05vw #FFD728;
+}
+
+
+.line10{
+  position: absolute;
+  height: 0.05vw;
+  width: 100%;
+  background-color: white;
+  top: 33.4vw;
+  box-shadow: 0 0 1vw white,
+            0 0 2vw white,
+            0 0 3vw white,
+            0 0 4vw white,
+            0 0 5vw white,
+            0 0 0 0.1vw white;
+}
+.degree{
+  position: absolute;
+  color: white;
+  top: 0.75vw;
+  left: 16.5vw;
+  font-family: 'futura';
+  font-size: 2vw;
+}
+.numberboost{
+  position: absolute;
+  color: #FFD728;
+  top: 2.8vw;
+  left: 15.3vw;
+  font-family: 'futura';
+  font-size: 3.2vw;
+}
+.boost{
+  position: absolute;
+  color: white;
+  top: 8.4vw;
+  left: 13vw;
+  font-family: 'futura';
+  font-size: 1.7vw;
+}
+
+.performances{
+  position: absolute;
+  color: white;
+  top: 5.9vw;
+  left: 70vw;
+  font-family: 'futura';
+  font-size: 1.3vw;
+}
+
+.min{
+  position: absolute;
+  color: white;
+  top: 10.1vw;
+  left: 9.4vw;
+  font-family: 'futura';
+  font-size: 0.5vw;
+}
+.max{
+  position: absolute;
+  color: white;
+  top: 10.1vw;
+  left: 22.3vw;
+  font-family: 'futura';
+  font-size: 0.5vw;
+}
+
+.barboostborder{
+  position: absolute;
+  height: 1.5vw;
+  width: 14.7vw;
+  border: 0.05vw solid white;
+  top: 11.5vw;
+  left: 8.8vw;
+}
+
+.barboost{
+  position: absolute;
+  height: 1.5vw;
+  width: 9.55vw;
+  background-color: #BC0067;
+  top: 11.55vw;
+  left: 8.8vw;
+  animation-name: barboost;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  will-change: transform;
+  transform-origin: 0 0;
+}
+
+
+@keyframes barboost {
+
+  0%   { transform: scaleX(0);}
+  20%   { transform: scaleX(1.55); }
+  40%   { transform: scaleX(1); }
+  60%   { transform: scaleX(0.5); }
+  80%   { transform: scaleX(1); }
+  100%   { transform: scaleX(0);}
+
+}
+.barkwborder{
+  position: absolute;
+  height: 1vw;
+  width: 10.4vw;
+  border: 0.05vw solid white;
+  top: 18.18vw;
+  left: 11vw;
+  overflow: hidden;
+}
+
+.barkw{
+  position: absolute;
+  height: 1vw;
+  width: 5.2vw;
+  background-color: #FFD728;
+  top: 18.23vw;
+  left: 11vw;
+  animation-name: barkw;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  will-change: transform;
+  transform-origin: 0 0;
+}
+
+
+@keyframes barkw {
+
+
+  0%   { transform: scaleX(1);; background-color: #FFC200;}
+  20%   { transform: scaleX(2);; background-color: #FFC200;}
+  40%   { transform: scaleX(1.5);; background-color: #FFC200;}
+  60%   { transform: scaleX(0.5);; background-color: #FFC200;}
+  80%   { transform: scaleX(1.8);; background-color: #FFC200;}
+  100%   { transform: scaleX(1);; background-color: #FFC200;}
+
+
+}
+.barnmborder{
+  position: absolute;
+  height: 1vw;
+  width: 10.4vw;
+  border: 0.05vw solid white;
+  top: 21.89vw;
+  left: 11vw;
+}
+
+.barnm{
+  position: absolute;
+  height: 1vw;
+  width: 10.4vw;
+  background-color: #FFD728;
+  top: 21.94vw;
+  left: 11vw;
+  animation-name: barnm;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  will-change: transform;
+  animation-delay: 2s;
+}
+
+
+@keyframes barnm {
+  0%   { transform: scaleX(0); }
+
+  50%   { transform: scaleX(1); background-color: #FFC200;}
+
+  100% { transform: scaleX(0);}
+}
+
+.kw{
+  position: absolute;
+  color: white;
+  top: 18.18vw;
+  left: 8.9vw;
+  font-family: 'futura';
+  font-size: 0.5vw;
+}
+
+.nm{
+  position: absolute;
+  color: white;
+  top: 21.89vw;
+  left: 8.9vw;
+  font-family: 'futura';
+  font-size: 0.5vw;
+}
+
+.equalizer
+{
+    position: absolute;
+    top: 9vw;
+    right: 23vw;
+}
+
+
+.equalizer .bar
+{
+    margin: 0.15vw;
+    width: 5vw;
+    height: 0.25vw;
+    animation-name: equalizer-bar-bounce;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    will-change: transform;
+
+
+  }
+
+
+
+.bar-1 { animation-delay: 0.1s; background-color: #01D8FF; transform-origin: 0 0;}
+.bar-2 { animation-delay: 2.2s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-3 { animation-delay: 1.3s; background-color: #01D8FF; transform-origin: 0 0;}
+.bar-4 { animation-delay: 0.4s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-5 { animation-delay: 1.5s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-6 { animation-delay: 0.6s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-7 { animation-delay: 3.7s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-8 { animation-delay: 0.8s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-9 { animation-delay: 1.9s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-10 { animation-delay: 1s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-11 { animation-delay: 0.2s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-12 { animation-delay: 1.3s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-13 { animation-delay: 2.4s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-14 { animation-delay: 0.5s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-15 { animation-delay: 1.6s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-16 { animation-delay: 0.7s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-17 { animation-delay: 1.8s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-18 { animation-delay: 1.9s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-19 { animation-delay: 2s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-20 { animation-delay: 0.1s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-21 { animation-delay: 2.2s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-22 { animation-delay: 2.3s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-23 { animation-delay: 2.4s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-24 { animation-delay: 0.5s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-25 { animation-delay: 2.6s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-26 { animation-delay: 0.7s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-27 { animation-delay: 2.8s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-28 { animation-delay: 3.9s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-29 { animation-delay: 3s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-30 { animation-delay: 2.1s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-31 { animation-delay: 1.2s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-32 { animation-delay: 0.3s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-33 { animation-delay: 3.4s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-34 { animation-delay: 3.5s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-35 { animation-delay: 0.6s;background-color: #01D8FF; transform-origin: 0 0;}
+.bar-36 { animation-delay: 3.7s;background-color: #93E6FD; transform-origin: 0 0;}
+.bar-37 { animation-delay: 1.8s;background-color: #01D8FF; transform-origin: 0 0;}
+
+@keyframes equalizer-bar-bounce {
+
+
+  0%   { transform: scaleX(4);}
+  10%   { transform: scaleX(1);}
+  20%   { transform: scaleX(3);}
+  30%   { transform: scaleX(4);}
+  40%   { transform: scaleX(2);}
+  50%   { transform: scaleX(1);}
+  60%   { transform: scaleX(3);}
+  70%   { transform: scaleX(1);}
+  80%   { transform: scaleX(2);}
+  90%   { transform: scaleX(1);}
+  100%   { transform: scaleX(4);}
+
+}
+
+.oblong{
+  position: absolute;
+  height: 52.1%;
+  width: 35.3%;
+  border: 0.1vw solid #01D8FF;
+  left: 1vw;
+  top: 36.5vw;
+  border-radius: 1%;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+}
+
+.linevertical1{
+  position: absolute;
+  height: 52.1%;
+  border: 0.1vw solid #01D8FF;
+  left: 6vw;
+  top: 36.5vw;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+            animation-name: barmoove;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+            will-change: transform;
+
+}
+
+@keyframes barmoove {
+
+  0%   { left: 35.5vw;}
+
+  100%   { left: 1vw;}
+
+}
+.linevertical2{
+  position: absolute;
+  height: 52.1%;
+  border: 0.1vw solid #01D8FF;
+  left: 11.5vw;
+  top: 36.5vw;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+            animation-name: barmoove2;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+            will-change: transform;
+
+
+}
+
+@keyframes barmoove2 {
+
+  0%   { left: 1vw;}
+
+  100%   { left: 35.5vw;}
+
+}
+
+.linehorizontal1{
+  position: absolute;
+  width: 35.3%;
+  border: 0.1vw solid #01D8FF;
+  left: 1vw;
+  top: 41.5vw;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+            animation-name: barmoove3;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+            will-change: transform;
+
+
+}
+
+@keyframes barmoove3 {
+
+  0%   { top: 36.5vw;}
+
+  100%   { top: 77.5vw;}
+
+}
+
+.linehorizontal2{
+  position: absolute;
+  width: 35.3%;
+  border: 0.1vw solid #01D8FF;
+  left: 1vw;
+  top: 47vw;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+            animation-name: barmoove4;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+            will-change: transform;
+
+
+}
+
+@keyframes barmoove4 {
+
+  0%   { top: 77.5vw;}
+
+  100%   { top: 36.5vw;}
+}
+
+.oblong2{
+  position: absolute;
+  height: 52.1%;
+  width: 35.3%;
+  border: 0.1vw solid #01D8FF;
+  right: 1vw;
+  top: 36.5vw;
+  border-radius: 1%;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+
+}
+
+.linevertical1right{
+  position: absolute;
+  height: 52.1%;
+  border: 0.1vw solid #01D8FF;
+  right: 1vw;;
+  top: 36.5vw;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+            animation-name: barmoove5;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+            will-change: transform;
+
+
+}
+
+@keyframes barmoove5 {
+
+  0%   { right: 35.5vw;}
+
+  100%   { right:  1vw;}
+
+
+}
+.linevertical2right{
+  position: absolute;
+  height: 52.1%;
+  border: 0.1vw solid #01D8FF;
+  right: 1vw;
+  top: 36.5vw;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+            animation-name: barmoove6;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+            will-change: transform;
+
+
+}
+
+@keyframes barmoove6 {
+
+  0%   { right: 1vw;}
+
+  100%   { right:  35.5vw;}
+
+
+}
+
+.linehorizontal1right{
+  position: absolute;
+  width: 35.3%;
+  border: 0.1vw solid #01D8FF;
+  right: 1vw;
+  top: 41.5vw;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+  animation-name: barmoove7;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  will-change: transform;
+
+
+}
+
+@keyframes barmoove7 {
+
+0%   { top: 77.5vw;}
+
+100%   { top: 36.5vw;}
+
+}
+.linehorizontal2right{
+  position: absolute;
+  width: 35.3%;
+  border: 0.1vw solid #01D8FF;
+  right: 1vw;
+  top: 47vw;
+  box-shadow: 0 0 0.5vw #01D8FF,
+            0 0 1vw #01D8FF,
+            0 0 1.6vw #01D8FF,
+            0 0 2vw #01D8FF,
+            0 0 2.5vw #01D8FF,
+            0 0 0 0.05vw #01D8FF;
+            animation-name: barmoove8;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+            will-change: transform;
+
+
+
+}
+
+@keyframes barmoove8 {
+
+  0%   { top: 36.5vw;}
+
+  100%   { top: 77.5vw;}
+
+}
+
+#voiture1{
+  position: absolute;
+  left: 6.3vw;
+  top: 39vw;
+  height: 46%;
+  width: 21vw;
+
+}
+#voiture2{
+  position: absolute;
+  right: 6.3vw;
+  top: 39vw;
+  height: 36.5vw;
+  width: 21vw;
+
+}
+
+.engine{
+  position: absolute;
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 50%;
+  background-color: #FFD728;
+  top: 60.5vw;
+  left: 20vw;
+
+
+}
+
+#textengine{
+  display: none;
+  position: absolute;
+  left: 21.5vw;
+  top: -9.5vw;
+  width: 16vw;
+  color: white;
+  font-family: 'futura';
+}
+.engine:hover #textengine{
+  display: block;
+}
+
+.whele{
+  position: absolute;
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 50%;
+  background-color: #FFD728;
+  top: 45.5vw;
+  left: 8.5vw;
+
+
+}
+
+#textwhele{
+  display: none;
+  position: absolute;
+  left: 32.9vw;
+  top: 5.5vw;
+  width: 16vw;
+  color: white;
+  font-family: 'futura';
+}
+.whele:hover #textwhele{
+  display: block;
+}
+.carheadlight{
+  position: absolute;
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 50%;
+  background-color: #FFD728;
+  top: 41.5vw;
+  left: 74vw;
+
+
+}
+
+#textcarheadlight{
+  display: none;
+  position: absolute;
+  left: -32.5vw;
+  top: 9.5vw;
+  width: 16vw;
+  color: white;
+  font-family: 'futura';
+}
+.carheadlight:hover #textcarheadlight{
+  display: block;
+}
+.margin1 {
+  position: absolute;
+  height: 0.05vw;
+  width: 4.2vw;
+  background-color: #FFD728;
+  left: 40vw;
+  top: 50.6vw;
+  box-shadow: 0 0 0.5vw #FFD728,
+            0 0 1vw #FFD728,
+            0 0 1.6vw #FFD728,
+            0 0 2vw #FFD728,
+            0 0 2.5vw #FFD728,
+            0 0 0 0.05vw #FFD728;
+}
+.margin2 {
+  position: absolute;
+  height: 0.05vw;
+  width: 4.2vw;
+  background-color: #FFD728;
+  left: 54vw;
+  top: 50.6vw;
+  box-shadow: 0 0 0.5vw #FFD728,
+            0 0 1vw #FFD728,
+            0 0 1.6vw #FFD728,
+            0 0 2vw #FFD728,
+            0 0 2.5vw #FFD728,
+            0 0 0 0.05vw #FFD728;
+}
+.margin3 {
+  position: absolute;
+  height: 0.05vw;
+  width: 4.2vw;
+  background-color: #FFD728;
+  left: 40vw;
+  top: 62.1vw;
+  box-shadow: 0 0 0.5vw #FFD728,
+            0 0 1vw #FFD728,
+            0 0 1.6vw #FFD728,
+            0 0 2vw #FFD728,
+            0 0 2.5vw #FFD728,
+            0 0 0 0.05vw #FFD728;
+}
+.margin4 {
+  position: absolute;
+  height: 0.05vw;
+  width: 4.2vw;
+  background-color: #FFD728;
+  left: 54vw;
+  top: 62.1vw;
+  box-shadow: 0 0 0.5vw #FFD728,
+            0 0 1vw #FFD728,
+            0 0 1.6vw #FFD728,
+            0 0 2vw #FFD728,
+            0 0 2.5vw #FFD728,
+            0 0 0 0.05vw #FFD728;
+}
+.margin5 {
+  position: absolute;
+  height: 4.2vw;
+  width: 0.05vw;
+  background-color: #FFD728;
+  left: 40vw;
+  top: 57.9vw;
+  box-shadow: 0 0 0.5vw #FFD728,
+            0 0 1vw #FFD728,
+            0 0 1.6vw #FFD728,
+            0 0 2vw #FFD728,
+            0 0 2.5vw #FFD728,
+            0 0 0 0.05vw #FFD728;
+}
+.margin6 {
+  position: absolute;
+  height: 4.2vw;
+  width: 0.05vw;
+  background-color: #FFD728;
+  left: 58.15vw;
+  top: 57.9vw;
+  box-shadow: 0 0 0.5vw #FFD728,
+            0 0 1vw #FFD728,
+            0 0 1.6vw #FFD728,
+            0 0 2vw #FFD728,
+            0 0 2.5vw #FFD728,
+            0 0 0 0.05vw #FFD728;
+}
+.margin7 {
+  position: absolute;
+  height: 4.2vw;
+  width: 0.05vw;
+  background-color: #FFD728;
+  left: 58.15vw;
+  top: 50.6vw;
+  box-shadow: 0 0 0.5vw #FFD728,
+            0 0 1vw #FFD728,
+            0 0 1.6vw #FFD728,
+            0 0 2vw #FFD728,
+            0 0 2.5vw #FFD728,
+            0 0 0 0.05vw #FFD728;
+}
+.margin8 {
+  position: absolute;
+  height: 4.2vw;
+  width: 0.05vw;
+  background-color: #FFD728;
+  left: 40vw;
+  top: 50.6vw;
+  box-shadow: 0 0 0.5vw #FFD728,
+            0 0 1vw #FFD728,
+            0 0 1.6vw #FFD728,
+            0 0 2vw #FFD728,
+            0 0 2.5vw #FFD728,
+            0 0 0 0.05vw #FFD728;
+}
+
+px
